@@ -31,7 +31,7 @@ nav ul li a {
 /* Main content styles */
 main {
     display: flex;
-    /* align-items: center; */
+    justify-content: center;
     margin-top: 2rem;
     padding: 20px;
     max-width: 1200px;
@@ -39,15 +39,16 @@ main {
     margin-right: auto;
 }
 
+.left-panel-container,
 .left-panel {
     width: 300px;
-    flex-shrink: 0;
+    max-width: 200px;
     padding-right: 4rem;
+    flex-shrink: 0;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    max-width: 200px;
 }
 
 .right-panel {
@@ -66,4 +67,27 @@ main {
         padding-bottom: 2rem;
         text-align: center;
     }
+}
+
+/* Project page styles */
+.project-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-page h2 {
+    text-align: center;
+}
+
+.project-page figure {
+    margin: 0;
+    text-align: center;
+}
+
+.project-page figcaption {
+    font-style: italic;
+    margin-top: 0.5rem;
 }

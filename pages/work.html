@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="../index.html">Asad Husain</a></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="./education.html">Education</a></li>
+                <li><a href="./work.html">Work</a></li>
+                <li><a href="./interests.html">Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('../left-panel.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('.left-panel-container').innerHTML = data;
+                });
+
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split('/').pop();
+                if (linkPath === currentPath) {
+                    link.classList.add('nav-active');
+                }
+            });
+        });
+    </script>
+    <main>
+        <div class="left-panel-container"></div>
+        <div class="right-panel">
+            <h2>Work</h2>
+            <div class="work-entry">
+                <img src="https://via.placeholder.com/50" alt="Company Logo">
+                <div class="work-details">
+                    <h3>Company One</h3>
+                    <p><strong>Senior Widget Engineer</strong> | Jan 2022 - Present</p>
+                    <ul>
+                        <li>Engineered and launched the next generation of widgets.</li>
+                        <li>Improved widget performance by 30%.</li>
+                        <li>Mentored junior widget engineers.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work-entry">
+                <img src="https://via.placeholder.com/50" alt="Company Logo">
+                <div class="work-details">
+                    <h3>Company Two</h3>
+                    <p><strong>Widget Engineer</strong> | Jan 2020 - Dec 2021</p>
+                    <ul>
+                        <li>Developed and maintained the company's main widget line.</li>
+                        <li>Collaborated with cross-functional teams to define widget specifications.</li>
+                        <li>Fixed over 100 widget-related bugs.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work-entry">
+                <img src="https://via.placeholder.com/50" alt="Company Logo">
+                <div class="work-details">
+                    <h3>Company Three</h3>
+                    <p><strong>Junior Widget Engineer</strong> | Jun 2018 - Dec 2019</p>
+                    <ul>
+                        <li>Assisted in the development of new widgets.</li>
+                        <li>Wrote and executed unit tests for widgets.</li>
+                        <li>Provided support to the widget quality assurance team.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work-entry">
+                <img src="https://via.placeholder.com/50" alt="Company Logo">
+                <div class="work-details">
+                    <h3>Company Four</h3>
+                    <p><strong>Widget Intern</strong> | May 2017 - Aug 2017</p>
+                    <ul>
+                        <li>Learned the basics of widget engineering.</li>
+                        <li>Completed a summer project on widget optimization.</li>
+                        <li>Presented project findings to the engineering team.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

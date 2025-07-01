@@ -21,13 +21,20 @@
             <ul>
                 <li><a href="index.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="pages/education.html">Education</a></li>
-                <li><a href="pages/interests.html">Interests</a></li>
+                <li><a href="./pages/education.html">Education</a></li>
+                <li><a href="./pages/work.html">Work</a></li>
+                <li><a href="./pages/interests.html">Interests</a></li>
             </ul>
         </nav>
     </header>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            fetch('left-panel.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('.left-panel-container').innerHTML = data;
+                });
+
             const currentPath = window.location.pathname.split('/').pop();
             const navLinks = document.querySelectorAll('nav ul li a');
 
@@ -40,19 +47,7 @@
         });
     </script>
     <main>
-        <div class="left-panel">
-            <img src="https://i.imgur.com/R31ucaa.jpeg" alt="Profile Photo" class="profile-photo">
-            <h2>Hey, I'm Asad</h2>
-            <p class="pronouns">(he/him)</p>
-            <p class="pronunciation">that's [uh-sahd]</p>
-            <p class="bio">I'm passionate about analyzing and telling stories with data.</p>
-            <div class="social-media">
-                <a href="mailto:asad.husain97@gmail.com?subject=Hello"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/asadhusain97/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/asadhusain97"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/asadhusain97/"><i class="fa-solid fa-file-arrow-down"></i></a>
-            </div>
-        </div>
+        <div class="left-panel-container"></div>
         <div class="right-panel">
             <h2>About me</h2>
             <p>
