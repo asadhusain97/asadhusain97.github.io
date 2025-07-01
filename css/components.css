@@ -1,0 +1,68 @@
+/* Highlight active navigation link */
+.nav-active {
+    font-weight: bold;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    margin-right: 1rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+/* Profile photo */
+.profile-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 10%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Education and Interests page styles */
+.education-entry,
+.interest-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.education-entry img,
+.interest-entry img {
+    margin-right: 1.5rem;
+    max-width: 200px;
+}
+
+/* Projects page styles */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.project-entry {
+    text-align: center;
+}
+
+.project-thumbnail {
+    flex: 1 1 calc(33% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.project-thumbnail img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.project-thumbnail h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+}
