@@ -1,7 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.3em;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    /* Thicker underline */
+    background: linear-gradient(90deg, #b3e0b3 60%, transparent 100%);
+    /* Pastel green */
+    z-index: -1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.projects-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project-thumbnail {
+    flex: 1 1 calc(33% - 40px);
+    /* Adjust as needed for desired column count */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.project-thumbnail img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.project-thumbnail h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
 }
 
 nav ul {
@@ -29,7 +95,7 @@ main {
     margin-top: 2rem;
 }
 
-main p {
+main div {
     margin-left: 2rem;
 }
 
