@@ -32,3 +32,38 @@ main {
 main p {
     margin-left: 2rem;
 }
+
+.education-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.education-entry img {
+    margin-right: 1.5rem;
+}
+
+.interest-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+.interest-entry p {
+    margin-right: 1.5rem;
+}
+
+.interest-entry img {
+    max-width: 200px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.project-entry {
+    text-align: center;
+}
