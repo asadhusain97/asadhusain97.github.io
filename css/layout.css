@@ -1,10 +1,22 @@
 /* Header styles */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     background-color: #f6fff8;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header>h1 {
+    width: 200px;
+    padding-right: 4rem;
+    flex-shrink: 0;
+}
+
+header>nav {
+    width: 800px;
 }
 
 /* Navigation styles */
@@ -13,6 +25,8 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 nav ul li {
@@ -44,7 +58,8 @@ main {
 .left-panel {
     width: 300px;
     max-width: 200px;
-    padding-right: 4rem;
+    padding-right: 3rem;
+    padding-left: 2rem;
     flex-shrink: 0;
     text-align: center;
     display: flex;
