@@ -26,6 +26,7 @@ nav ul li a {
     text-align: right;
     text-decoration: none;
     color: grey;
+    border-bottom: none;
 }
 
 /* Main content styles */

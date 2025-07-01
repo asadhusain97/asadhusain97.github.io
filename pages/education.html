@@ -32,7 +32,8 @@
             fetch('../left-panel.html')
                 .then(response => response.text())
                 .then(data => {
-                    document.querySelector('.left-panel-container').innerHTML = data;
+                    const adjustedData = data.replace(/src="images\//g, 'src="../images/');
+                    document.querySelector('.left-panel-container').innerHTML = adjustedData;
                 });
 
             const currentPath = window.location.pathname.split('/').pop();
@@ -51,14 +52,68 @@
         <div class="right-panel">
             <h2>Education</h2>
             <div class="education-entry">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Yu1sEkF3O95eGQ1-GKjivv73VAZ82x5dOA&s"
-                    alt="University Logo">
-                <p>Sample University – B.Sc. in Computer Science (2020–2024)</p>
+                <a href="https://business.purdue.edu/undergraduate/academics/business-analytics-and-information-management.php"
+                    target="_blank"><img src="../images/purdue_pic.jpg" alt="University picture"></a>
+                <div class="education-details">
+                    <p><a href="https://business.purdue.edu/undergraduate/academics/business-analytics-and-information-management.php"
+                            target="_blank"><b>Purdue University, Krannert school of Management, West Lafayette</b></a>
+                        <i>(2021 - 2022)</i>
+                    </p>
+                    <p>
+                        Purdue was my gateway to the world of data science, courtesy of pandemic-induced career
+                        soul-searching.
+                        My days at AB InBev wrestling with Excel spreadsheets and playing statistical detective
+                        to save the company some dollars had planted a seed. The pandemic gave me way too much time to
+                        think, and
+                        I realized I was genuinely obsessed with turning numbers into stories. Purdue's
+                        world-class Business Analytics program called to me from across the ocean. Ten months
+                        of intense learning later, surrounded by brilliant minds from every corner of the globe, I
+                        somehow managed to stand out in this incredible crowd. The cherry on top was landing one of the
+                        most coveted Data Scientist spots at BCG. From
+                        fixing brewery floors in India to the consulting towers in New York, it's been one wild ride.
+                        The
+                        takeaway? Never stop learning.
+                    </p>
+                </div>
             </div>
             <div class="education-entry">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Yu1sEkF3O95eGQ1-GKjivv73VAZ82x5dOA&s"
-                    alt="University Logo">
-                <p>Another University – M.Sc. in Artificial Intelligence (2024–2026)</p>
+                <a href="https://www.bits-pilani.ac.in/pilani/mechanical-engineering/" target="_blank"><img
+                        src="../images/bits.png" alt="School picture"></a>
+                <div class="education-details">
+                    <p> <a href="https://www.bits-pilani.ac.in/pilani/mechanical-engineering/" target="_blank"><b>BITS
+                                Pilani, Pilani campus</b></a> <i> (2015 - 2019)</i> </p>
+                    <p>
+                        Four years of organized chaos where I juggled Mechanical Engineering, a Finance minor, and an
+                        unhealthy obsession with building an ATV. Rose through the ranks of Inspired Karters, the BAJA
+                        team,
+                        to be the captain of 32 brilliant engineers, designing vehicles that could handle anything
+                        except my driving. Between managing the team, contributing to cultural and mechanical
+                        association
+                        events, and
+                        showing up to all the parties, I somehow graduated. The universe rewarded
+                        this beautiful madness when the AB InBev rolled up with one of the coolest jobs at the Budweiser
+                        Brewery. Thing to always remember - Make sure I enjoy the work I do and the people I do it with.
+                    </p>
+                </div>
+            </div>
+            <div class="education-entry">
+                <a href="http://www.stmarysujjain.in/fsma/Default.html" target="_blank"><img
+                        src="../images/school_front.jpeg" alt="High school picture"></a>
+                <div class="education-details">
+                    <p><a href="http://www.stmarysujjain.in/fsma/Default.html" target="_blank"><b>St. Mary's Convent Sr.
+                                Secondary School, Ujjain</b></a> <i>(2001 - 2015)</i> </p>
+                    <p>
+                        Spent 14 years at this gem of a place where I found lifelong friends and amazing mentors who
+                        shaped
+                        my early years. I was always the child with 'potential' (teacher code for 'tries hard, achieves
+                        little') and kept my distance from the academic success my parents were hoping for. Then came
+                        the
+                        plot twist: I somehow scored the highest in the entire school during grade 12 board exams. That
+                        (unexpected) victory
+                        gave me the boost I needed to tackle India's (in)famous competitive entrance exams and secure my
+                        ticket to BITS Pilani. The biggest lesson? Confidence is king!
+                    </p>
+                </div>
             </div>
         </div>
     </main>

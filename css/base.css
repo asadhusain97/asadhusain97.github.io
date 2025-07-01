@@ -43,14 +43,3 @@ p {
     font-family: 'PT Sans', sans-serif;
     font-size: 1rem;
 }
-
-.pronouns {
-    font-weight: bold;
-    font-style: italic;
-    color: #333;
-}
-
-.pronunciation {
-    font-style: italic;
-    color: #666;
-}

@@ -32,7 +32,8 @@
             fetch('../left-panel.html')
                 .then(response => response.text())
                 .then(data => {
-                    document.querySelector('.left-panel-container').innerHTML = data;
+                    const adjustedData = data.replace(/src="images\//g, 'src="../images/');
+                    document.querySelector('.left-panel-container').innerHTML = adjustedData;
                 });
 
             const currentPath = window.location.pathname.split('/').pop();
