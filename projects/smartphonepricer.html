@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asad's Projects</title>
+    <link rel="icon" href="../images/website_icon.png" type="image/png">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="../index.html">Asad Husain</a></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="./education.html">Education</a></li>
+                <li><a href="./work.html">Work</a></li>
+                <li><a href="./interests.html">Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split('/').pop();
+                if (linkPath === currentPath) {
+                    link.classList.add('nav-active');
+                }
+            });
+        });
+    </script>
+    <main class="project-page">
+        <h2>Smartphone Price Predictor Shiny App</h2>
+        <p><i>From zero R knowledge to building an interactive web app (and scoring a respectable B)</i></p>
+        <figure>
+            <img src="../images/project_imgs/smartphoneprice.png" alt="Project 2 Image">
+        </figure>
+        <p><a href="https://github.com/asadhusain97/Smartphone-Price-Prediciton/tree/main?tab=readme-ov-file"
+                target="_blank"><b>Link to Github
+                    Repo</b></a> | <a href="https://asadman.shinyapps.io/Final_Project/" target="_blank"><b>Link to
+                    App</b></a></p>
+        <h3>What I Built</h3>
+        <p>An R Shiny web app that predicts smartphone price ranges based on technical specs like battery size, RAM,
+            screen resolution, and 5G capability. Built for phone companies to figure out optimal pricing strategies in
+            the competitive smartphone market.</p>
+        <h3>The Academic Challenge</h3>
+        <p>This was my crash course in R for a Purdue class. Started knowing absolutely nothing about R or Shiny, and
+            had to deliver a full-stack data science app in a couple months. Classic sink-or-swim academic project
+            situation.</p>
+        <h3>How It Works</h3>
+        <p>
+            <br><b>Data Foundation:</b> Worked with 2000 smartphone records containing 20 different specifications each
+            -
+            everything from battery capacity to camera megapixels to connectivity features.
+            <br><b>Interactive EDA:</b> Built visualizations using ggplot2 to show how different specs correlate with
+            price ranges.
+            Users can explore relationships between features like "does more RAM really mean higher price?"
+            <br><b>Smart Modeling:</b> Tested multiple machine learning approaches and landed on Random Forest as the
+            winner. Had
+            to handle multicollinearity between features (turns out phone specs are pretty interconnected).
+            <br><b>Price Prediction:</b> The app takes in phone specifications and spits out which of 4 price segments
+            (budget to
+            premium) the device should fall into.
+        </p>
+        <h3>What I Learned</h3>
+        <p>First time touching R, let alone building interactive web apps with Shiny. Had to learn data manipulation,
+            statistical modeling, and web app deployment all at once. The syntax took some getting used to coming from
+            Python, but R's data analysis capabilities are pretty sweet.
+            Figuring out Shiny's reactive programming model was the trickiest part - making sure the app updates
+            smoothly when users change inputs.</p>
+        <h3>Result</h3>
+        <p>Hit 94% accuracy on price range predictions, which felt pretty solid for a class project. More importantly,
+            got that B grade and actually learned to love R's approach to data science.</p>
+        <p><b>Technologies Used:</b> R, Shiny, ggplot2, Random Forest, deployed on shinyapps.io</p>
+        <p><i>Academic project at Purdue University, 2021</i></p>
+    </main>
+</body>
+
+</html>

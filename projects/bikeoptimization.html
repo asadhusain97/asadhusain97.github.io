@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asad's Projects</title>
+    <link rel="icon" href="../images/website_icon.png" type="image/png">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="../index.html">Asad Husain</a></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="./education.html">Education</a></li>
+                <li><a href="./work.html">Work</a></li>
+                <li><a href="./interests.html">Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split('/').pop();
+                if (linkPath === currentPath) {
+                    link.classList.add('nav-active');
+                }
+            });
+        });
+    </script>
+    <main class="project-page">
+        <h2>Bike Sharing System Optimization</h2>
+        <p><i>Using algorithms and data science to solve real business problems for Austin's Metro Bike system</i></p>
+        <figure>
+            <img src="../images/project_imgs/bikeopti_ss.png" alt="Project 2 Image">
+        </figure>
+        <p><a href="https://github.com/asadhusain97/Bike-Share-Operations/tree/main" target="_blank"><b>Link to Github
+                    Repo</b></a></p>
+        <h3>What I Built</h3>
+        <p>I tackled five optimization challenges for Austin's bike sharing system using 130K+ trip records. This was my
+            first real dive into data structures and algorithms, and I loved figuring out how to turn complex problems
+            into practical solutions.</p>
+        <h3>The Problems I Solved</h3>
+        <p><b>Route Optimization:</b> Maintenance staff were traveling 43km daily visiting all kiosks randomly. I used
+            the
+            Traveling Salesman Problem to cut this down to 37km, saving $60/day in travel costs.
+            <br><b>Trip Prediction:</b> Built an XGBoost model to predict how long bikes would be rented based on
+            weather,
+            location, and user type. Hit 8.48% accuracy, helping with inventory planning.
+            <br><b>Smart Clustering:</b> When the company wanted to test new kiosk tech, I clustered stations by
+            popularity using
+            graph theory and K-means so they could safely pilot on low-risk locations.
+            <br><b>Strategic Downsizing:</b> COVID hit demand, so they needed to close 5-10 kiosks. I built a linear
+            programming
+            model that identified which 10 to close while keeping revenue intact and meeting business constraints.
+            <br><b>Network Coverage:</b> Found the minimum number of kiosks needed for city-wide connectivity (turns out
+            it's 41
+            out of 44 - almost all of them!).
+        </p>
+        <h3>What I Learned</h3>
+        <p>This project was my crash course in turning theoretical CS concepts into real business value. Going from
+            "here's an algorithm" to "this saves $60 per day" was incredibly satisfying. Plus, working with messy
+            real-world data taught me that the best technical solution isn't always the most complex one.</p>
+        <p><b>Technologies Used:</b> Python, NetworkX, scikit-learn, XGBoost, PuLP, Jupyter Notebooks</p>
+        <p><i>Academic project at Purdue University, 2021</i></p>
+    </main>
+</body>
+
+</html>

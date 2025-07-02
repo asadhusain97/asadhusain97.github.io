@@ -18,7 +18,7 @@
 .social-media a:hover {
     color: #61fb75;
     filter: opacity(0.8);
-    filter: brightness(0.92);
+    filter: brightness(0.7);
 }
 
 /* Profile photo */
@@ -83,6 +83,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
+    row-gap: 3rem;
 }
 
 .project-entry {
@@ -98,8 +99,45 @@
 .project-thumbnail img {
     width: 100%;
     height: auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.project-page figure {
+    margin: 2rem 0;
+}
+
+.project-page figure img {
+    width: 100%;
+    border-radius: 10px;
+    /* 10% is a bit much, let's go with 10px */
+}
+
+.project-page figcaption {
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.project-page a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    border-bottom: 1px solid #333;
+}
+
+.project-page a:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0.1em;
+    width: 100%;
+    height: 50%;
+    background: #61fb75;
+    filter: opacity(0.3);
+    z-index: -1;
 }
 
 .project-thumbnail h3 {

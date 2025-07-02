@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asad's Projects</title>
+    <link rel="icon" href="../images/website_icon.png" type="image/png">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="../index.html">Asad Husain</a></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="./education.html">Education</a></li>
+                <li><a href="./work.html">Work</a></li>
+                <li><a href="./interests.html">Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split('/').pop();
+                if (linkPath === currentPath) {
+                    link.classList.add('nav-active');
+                }
+            });
+        });
+    </script>
+    <main class="project-page">
+        <h2>Mobile Family Bill Splitter Automation</h2>
+        <p><i>Turning a monthly 30-minute chore into a 30-second email forward</i></p>
+        <figure>
+            <img src="../images/project_imgs/tmobilebill_ss.png" alt="Project 2 Image">
+        </figure>
+        <p><a href="https://github.com/asadhusain97/family_phone_bill_automation" target="_blank"><b>Link to Github
+                    Repo</b></a></p>
+        <h3>What I Built</h3>
+        <p>I got tired of manually parsing our 10-person family plan bill every month (mostly friends sharing costs), so
+            I built a fully automated system that does it for me. Now I just email the bill to a specific address, and
+            boom - everyone gets a breakdown of what they owe.</p>
+        <h3>The Problems I Solved</h3>
+        <p>Every month I'd spend 30 minutes going through T-Mobile's 6-page PDF bill, manually extracting each person's
+            charges, calculating splits, and sending everyone their portion. It wasn't a huge time sink, but the
+            motivation to do it was basically zero. Classic "I'll spend 10 hours automating a 30-minute task" situation.
+        </p>
+        <h3>How It Works</h3>
+        <p>
+            <b>Email-Triggered Workflow:</b> Forward the T-Mobile bill to my automation email with a specific subject
+            line, then wait for the magic to happen.
+            <br>
+            <b>Smart PDF Parsing:</b> This was the trickiest part. I tried OCR and ML approaches first, but T-Mobile's
+            PDFs are messy. Ended up using keyword-based text extraction to grab exactly what I needed from the bill
+            summary.
+            <br>
+            <b>GitHub Actions Automation:</b> Runs on a daily cron job (12 PM) using GitHub Actions for free cloud
+            hosting. Checks for new bills, processes them, and emails everyone their split.
+            <br>
+            <b>Complete Pipeline:</b> Email retrieval → PDF parsing → bill analysis → automated summary emails to all
+            family members.
+        </p>
+        <h3>Technical Challenges</h3>
+        <p>First time working with email automation (IMAP/SMTP) and GitHub Actions, so lots of learning on the fly. The
+            PDF parsing was brutal - tried multiple approaches before settling on reliable keyword-based extraction. Had
+            to handle Gmail app passwords, environment variables, and making the whole thing generic enough that others
+            could use it.</p>
+        <h3>Impact</h3>
+        <p>Been running rock-solid since September 2024 with just minor hiccups. Added more features over time and made
+            it generic so other families can adapt it. Saves me 30 minutes monthly, but more importantly, I never have
+            to think about bill splitting again.</p>
+        <p><b>Technologies Used:</b> Python, GitHub Actions, IMAP/SMTP, pandas, PDF parsing, YAML configs</p>
+        <p><i>Personal automation project, 2024</i></p>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asad's Projects</title>
+    <link rel="icon" href="../images/website_icon.png" type="image/png">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="../index.html">Asad Husain</a></h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="./education.html">Education</a></li>
+                <li><a href="./work.html">Work</a></li>
+                <li><a href="./interests.html">Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split('/').pop();
+                if (linkPath === currentPath) {
+                    link.classList.add('nav-active');
+                }
+            });
+        });
+    </script>
+    <main class="project-page">
+        <h2>Human Activity Recognition for Worker Safety</h2>
+        <p><i>Teaching machines to tell the difference between a slip, trip, and fall using wearable sensor data</i></p>
+        <figure>
+            <img src="../images/project_imgs/humanactivity.png" alt="Project 2 Image">
+        </figure>
+        <p><a href="https://github.com/asadhusain97/Human-Activity-Recognition/tree/main" target="_blank"><b>Link to
+                    Github
+                    Repo</b></a></p>
+        <h3>What I Built</h3>
+        <p>A neural network classifier that analyzes 15-second accelerometer data from wearable safety devices to
+            automatically detect workplace incidents. The system distinguishes between slips, trips, falls, and other
+            activities - crucial for worker safety monitoring and emergency response.</p>
+        <h3>The Challenge</h3>
+        <p>This was an industry-sponsored project through Purdue's DataMine team. Our client had workers wearing safety
+            devices that collected accelerometer data, but needed an automated way to classify incidents for faster
+            emergency response and better safety analytics.</p>
+        <p>Working with 986,250 rows of raw sensor data - my first time handling this much real-world data. Each
+            incident captured 375 acceleration measurements (25Hz over 15 seconds) in x, y, and z directions, triggered
+            when acceleration exceeded 2Gs in any direction.
+        </p>
+        <h3>How I solved it</h3>
+        <p><b>Feature Engineering Deep Dive:</b> Transformed basic x,y,z accelerometer readings into 20+ meaningful
+            features.
+            Started with simple stats (mean, max, variance) but got creative with signal processing techniques like
+            Fourier transforms to capture movement patterns.
+            <br><b>Neural Network Learning Curve:</b> This was my introduction to deep learning, so I experimented with
+            both
+            traditional MLPs and CNNs. Had to learn everything from scratch - backpropagation, activation functions, the
+            whole nine yards.
+            <br><b>Pattern Recognition:</b> The tricky part was teaching the model that a "slip" has different
+            acceleration
+            signatures than a "trip" or "fall." Each type of incident creates distinct patterns in the sensor data.
+        </p>
+        <h3>Technical Breakthroughs</h3>
+        <p>The biggest learning was understanding how time-series data works differently than typical classification
+            problems. Had to think about temporal patterns, not just individual data points.
+            Feature engineering was where the magic happened - raw accelerometer values don't mean much, but when you
+            extract the right statistical and frequency-domain features, the patterns become clear.</p>
+        <h3>Results and Impact</h3>
+        <p>Achieved 74% precision in classifying workplace incidents, which was a solid improvement for this type of
+            safety-critical application. More importantly, this could mean faster emergency response times and better
+            workplace safety insights for the client.</p>
+        <p><b>Technologies Used:</b> Python, Neural Networks (MLP), CNNs, signal processing, pandas, scikit-learn</p>
+        <p><i>Academic project at Purdue University, 2021</i></p>
+    </main>
+</body>
+
+</html>
