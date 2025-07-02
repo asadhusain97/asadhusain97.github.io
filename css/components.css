@@ -12,6 +12,13 @@
     color: #333;
     font-size: 1.8rem;
     border-bottom: none;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.social-media a:hover {
+    color: #61fb75;
+    filter: opacity(0.8);
+    filter: brightness(0.92);
 }
 
 /* Profile photo */
@@ -29,7 +36,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 4rem;
     margin-top: 0.5rem;
 }
 
@@ -40,7 +47,7 @@
     object-fit: cover;
     object-position: center;
     border-radius: 10%;
-    margin-right: 0.5rem;
+    margin-right: 1.0rem;
     background-color: transparent;
 }
 
