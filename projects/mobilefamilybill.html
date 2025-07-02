@@ -51,12 +51,18 @@
         <h3>What I Built</h3>
         <p>I got tired of manually parsing our 10-person family plan bill every month (mostly friends sharing costs), so
             I built a fully automated system that does it for me. Now I just email the bill to a specific address, and
-            boom - everyone gets a breakdown of what they owe.</p>
-        <h3>The Problems I Solved</h3>
-        <p>Every month I'd spend 30 minutes going through T-Mobile's 6-page PDF bill, manually extracting each person's
-            charges, calculating splits, and sending everyone their portion. It wasn't a huge time sink, but the
-            motivation to do it was basically zero. Classic "I'll spend 10 hours automating a 30-minute task" situation.
+            boom - I get the breakdown of what they owe, ready for Splitwise or Venmo.
+            <br>
+            Every month I'd spend 30 minutes going through T-Mobile's 6-page PDF bill, manually extracting each person's
+            charges, calculating splits, and sending everyone their portion. It was frustrating why T-Mobile would
+            not automatically do it in the bill when others do, but now I don't mind since I learned a lot during this
+            build. It wasn't a huge time sink honestly, but the motivation to do it was basically zero. Classic "I'll
+            spend 10 hours automating a 30-minute task" situation.
         </p>
+        <figure>
+            <img src="../images/project_imgs/tmobile_bill_automation.png" alt="Project 2 Image 2">
+            <figcaption>From the pdf bill line items to the per member total in an email</figcaption>
+        </figure>
         <h3>How It Works</h3>
         <p>
             <b>Email-Triggered Workflow:</b> Forward the T-Mobile bill to my automation email with a specific subject
@@ -66,11 +72,10 @@
             PDFs are messy. Ended up using keyword-based text extraction to grab exactly what I needed from the bill
             summary.
             <br>
-            <b>GitHub Actions Automation:</b> Runs on a daily cron job (12 PM) using GitHub Actions for free cloud
-            hosting. Checks for new bills, processes them, and emails everyone their split.
+            <b>GitHub Actions Automation:</b> Runs on a daily cron job using GitHub Actions for free cloud
+            hosting. Checks for new bills, processes them, and emails everyone's total split.
             <br>
-            <b>Complete Pipeline:</b> Email retrieval → PDF parsing → bill analysis → automated summary emails to all
-            family members.
+            <b>Complete Pipeline:</b> Email retrieval → PDF parsing → bill analysis → automated summary emails.
         </p>
         <h3>Technical Challenges</h3>
         <p>First time working with email automation (IMAP/SMTP) and GitHub Actions, so lots of learning on the fly. The
