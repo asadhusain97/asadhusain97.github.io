@@ -7,6 +7,7 @@
     <title>Asad's Projects</title>
     <link rel="icon" href="../images/website_icon.png" type="image/png">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,13 +18,18 @@
 <body>
     <header>
         <h1><a href="../index.html">Asad Husain</a></h1>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <nav>
             <ul>
                 <li><a href="../index.html">About</a></li>
                 <li><a href="../projects.html">Projects</a></li>
-                <li><a href="./education.html">Education</a></li>
-                <li><a href="./work.html">Work</a></li>
-                <li><a href="./interests.html">Interests</a></li>
+                <li><a href="../pages/education.html">Education</a></li>
+                <li><a href="../pages/work.html">Work</a></li>
+                <li><a href="../pages/interests.html">Interests</a></li>
             </ul>
         </nav>
     </header>
@@ -37,6 +43,13 @@
                 if (linkPath === currentPath) {
                     link.classList.add('nav-active');
                 }
+            });
+
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const nav = document.querySelector('nav');
+
+            hamburgerMenu.addEventListener('click', () => {
+                nav.classList.toggle('active');
             });
         });
     </script>

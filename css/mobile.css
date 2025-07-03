@@ -1,0 +1,81 @@
+@media (max-width: 768px) {
+    header {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header>nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: fit-content;
+        background-color: #f6fff8;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        display: block;
+        color: #333;
+        text-align: right;
+        -webkit-tap-highlight-color: transparent;
+        /* For WebKit browsers (Chrome, Safari) */
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    nav ul li a:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .hamburger-menu .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+        border-radius: 1.5px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        margin-left: 20px;
+    }
+
+    .project-entry a {
+        display: block;
+    }
+}
