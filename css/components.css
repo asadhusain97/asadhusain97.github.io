@@ -253,3 +253,54 @@
 .project-link:hover::before {
     width: 100%;
 }
+
+/* Certifications section styles */
+.certifications-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.certification-entry {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.certification-entry img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 10%;
+    flex-shrink: 0;
+}
+
+.certification-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.certification-details p {
+    margin: 0.25rem 0;
+}
+
+.certification-details a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    border-bottom: 1px solid #333;
+}
+
+.certification-details a:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0.1em;
+    width: 100%;
+    height: 50%;
+    background: #61fb75;
+    filter: opacity(0.3);
+    z-index: -1;
+}
