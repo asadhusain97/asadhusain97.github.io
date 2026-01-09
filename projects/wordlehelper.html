@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asad's Projects</title>
+    <link rel="icon" href="../images/website_icon.png" type="image/png">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="../index.html">Asad Husain</a></h1>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../pages/work.html">Experience</a></li>
+                <li><a href="../pages/education.html">Education</a></li>
+                <li><a href="../pages/interests.html">Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split('/').pop();
+                if (linkPath === currentPath) {
+                    link.classList.add('nav-active');
+                }
+            });
+
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const nav = document.querySelector('nav');
+
+            hamburgerMenu.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+        });
+    </script>
+    <main class="project-page">
+        <h2>Wordle Helper</h2>
+        <p><i>A web app to get the optimal wordle guess</i></p>
+        <figure>
+            <img src="../images/project_imgs/wordlehelperanim.png"
+                alt="Wordle helper animation showing the app in action">
+        </figure>
+        <p><a href="https://github.com/asadhusain97/wordle_ss" target="_blank"><b>Link to Github
+                    Repo</b></a>
+            | <a href="https://wordlehelperss.netlify.app/" target="_blank"><b>Link to
+                    App</b></a></p>
+        <h3>What I Built</h3>
+        <p>I love <a href="https://www.nytimes.com/crosswords" target="_blank">NYT's Wordle</a>, but I occasionally find
+            myself stuck on the fourth or fifth guess. Inspired by Grant Sanderson's (3Blue1Brown) <a
+                href="https://youtu.be/v68zYyaEmEA?si=B5PengRBOq-lYXcM" target="_blank">video on information theory</a>,
+            I created a web application that helps users find the optimal next guess. My goal was to leverage
+            information theory to mathematically determine the best move while simplifying the input process through
+            screenshot analysis.
+            <br>
+            Whenever I can't figure out the 'optimal' word to guess, I use this app to upload a screenshot of my current
+            game state. The app analyzes the image and uses information theory to provide a ranked list of words that
+            are statistically most likely to reveal the answer or eliminate the most possibilities.
+        </p>
+        <h3>How It Works</h3>
+        <p>
+            <b>Automated State Extraction:</b> Instantly converts uploaded screenshots into a digital game state using
+            computer vision techniques like contour detection and HSV color classification.
+            <br>
+            <b>Computer Vision Pipeline:</b> Utilizes advanced image preprocessing, including Gaussian blurring,
+            adaptive thresholding, and morphological operations, to ensure high optical character recognition (OCR)
+            accuracy.
+            <br>
+            <b>Entropy-Based Solver:</b> Ranks suggestions by their "information value" (entropy), helping users
+            maintain streaks by choosing words that maximize information gain.
+            <br>
+            <b>Dual-Input Mode:</b> Supports both automated screenshot analysis for speed and manual grid entry for
+            flexibility.
+        </p>
+        <h3>Technical Journey</h3>
+        <p>This project marked my first deep dive into full-stack JavaScript development and computer vision in the
+            browser. It presented several unique challenges:
+        <ul>
+            <li><b>Image Processing in the Browser:</b> Implementing complex image processing pipelines using OpenCV.js
+                required a deep understanding of performance optimization and memory management.</li>
+            <li><b>Color Classification:</b> Accurately distinguishing between the subtle color shades (green, yellow,
+                gray) used in Wordle, especially across different screen calibrations, required robust HSV thresholding.
+            </li>
+            <li><b>Information Theory Implementation:</b> Translating the mathematical concepts of entropy and
+                information gain into efficient code that could run in real-time on a client device was a significant
+                learning curve.</li>
+        </ul>
+        It was a technically rigorous project that bridged the gap between theoretical mathematics and practical web
+        application development.
+        </p>
+        <p><b>Technologies Used:</b> JavaScript, OpenCV.js, Tesseract.js, Information Theory, HTML/CSS</p>
+        <p><i>Personal project, 2025</i></p>
+    </main>
+</body>
+
+</html>

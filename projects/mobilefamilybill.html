@@ -57,49 +57,46 @@
         <h2>Mobile Family Bill Splitter Automation</h2>
         <p><i>Turning a monthly 30-minute chore into a 30-second email forward</i></p>
         <figure>
-            <img src="../images/project_imgs/tmobilebill_ss.png" alt="Project 2 Image">
+            <img src="../images/project_imgs/tmobilebill_ss.png" alt="tmobile bill splitter">
         </figure>
         <p><a href="https://github.com/asadhusain97/family_phone_bill_automation" target="_blank"><b>Link to Github
                     Repo</b></a></p>
         <h3>What I Built</h3>
         <p>I got tired of manually parsing our 10-person family plan bill every month (mostly friends sharing costs), so
-            I built a fully automated system that does it for me. Now I just email the bill to a specific address, and
-            boom - I get the breakdown of what they owe, ready for Splitwise or Venmo.
-            <br>
-            Every month I'd spend 30 minutes going through T-Mobile's 6-page PDF bill, manually extracting each person's
+            I built a fully automated system that does it for me. Now, the moment I get the bill notification on my
+            phone, I can generate the cost breakdown in seconds without ever leaving the file viewer. It turns a manual
+            15-minute spreadsheet chore into a single tap.
+            Every month I'd spend 15 minutes going through T-Mobile's 6-page PDF bill, manually extracting each person's
             charges, calculating splits, and sending everyone their portion. It was frustrating why T-Mobile would
-            not automatically do it in the bill when others do, but now I don't mind since I learned a lot during this
-            build. It wasn't a huge time sink honestly, but the motivation to do it was basically zero. Classic "I'll
-            spend 10 hours automating a 30-minute task" situation.
+            not automatically do it in the bill when Verizon and AT&T do, but now I don't mind since I learned a lot
+            during this build. It wasn't a huge time sink honestly, but the motivation to do it was basically zero.
+            Classic "I'll spend 10 hours automating a 15-minute task" situation.
         </p>
         <figure>
-            <img src="../images/project_imgs/tmobile_bill_automation.png" alt="Project 2 Image 2">
+            <img src="../images/project_imgs/tmobile_bill_automation.png" alt="tmobile bill splitter 2">
             <figcaption>From the pdf bill line items to the per member total in an email</figcaption>
         </figure>
         <h3>How It Works</h3>
         <p>
-            <b>Email-Triggered Workflow:</b> Forward the T-Mobile bill to my automation email with a specific subject
-            line, then wait for the magic to happen.
+            <b>On-Device Python Environment:</b> Instead of relying on external servers, I cloned my repository directly
+            onto my iPhone using a-shell, a terminal emulator that allows Python scripts to run locally on iOS.
+            <br>
+            <b>iOS Shortcut Integration:</b> I configured a custom Apple Shortcut that acts as a bridge between the iOS
+            share sheet and the Python script.
             <br>
             <b>Smart PDF Parsing:</b> This was the trickiest part. I tried OCR and ML approaches first, but T-Mobile's
             PDFs are messy. Ended up using keyword-based text extraction to grab exactly what I needed from the bill
-            summary.
-            <br>
-            <b>GitHub Actions Automation:</b> Runs on a daily cron job using GitHub Actions for free cloud
-            hosting. Checks for new bills, processes them, and emails everyone's total split.
-            <br>
-            <b>Complete Pipeline:</b> Email retrieval → PDF parsing → bill analysis → automated summary emails.
+            summary and do simple maths to get exactly how much each person owes.
         </p>
         <h3>Technical Challenges</h3>
-        <p>First time working with email automation (IMAP/SMTP) and GitHub Actions, so lots of learning on the fly. The
-            PDF parsing was brutal - tried multiple approaches before settling on reliable keyword-based extraction. Had
-            to handle Gmail app passwords, environment variables, and making the whole thing generic enough that others
-            could use it.</p>
+        <p>The biggest challenge was optimizing the workflow for a mobile environment. I had to ensure the Python
+            environment within a-shell was robust enough to handle the data processing libraries and configure the input
+            arguments so the script could dynamically accept the PDF path passed down from the iOS Shortcut. </p>
         <h3>Impact</h3>
-        <p>Been running rock-solid since September 2024 with just minor hiccups. Added more features over time and made
-            it generic so other families can adapt it. Saves me 30 minutes monthly, but more importantly, I never have
+        <p>Been running rock-solid since September 2024. Added more features over time and made
+            it generic so other families can adapt it. Saves me 15 minutes monthly, but more importantly, I never have
             to think about bill splitting again.</p>
-        <p><b>Technologies Used:</b> Python, GitHub Actions, IMAP/SMTP, pandas, PDF parsing, YAML configs</p>
+        <p><b>Technologies Used:</b> Python, a-shell, pandas, PDF parsing, YAML configs</p>
         <p><i>Personal automation project, 2024</i></p>
     </main>
 </body>

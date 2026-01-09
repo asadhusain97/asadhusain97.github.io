@@ -8,6 +8,13 @@
             "alt": "Quiz App Thumbnail"
         },
         {
+            "id": "wordle-helper",
+            "title": "Wordle Helper",
+            "link": "projects/wordlehelper.html",
+            "image": "images/project_imgs/wordlehelperanim.png",
+            "alt": "Wordle Helper Thumbnail"
+        },
+        {
             "id": "bill-splitter",
             "title": "T-Mobile Family Bill Splitter",
             "link": "projects/mobilefamilybill.html",
