@@ -1,0 +1,187 @@
+{
+    "projects": [
+        {
+            "id": "quiz-app",
+            "title": "Flutter Based Quiz App",
+            "link": "projects/flutterquizapp.html",
+            "image": "images/project_imgs/buzz5_anim.png",
+            "alt": "Quiz App Thumbnail"
+        },
+        {
+            "id": "bill-splitter",
+            "title": "T-Mobile Family Bill Splitter",
+            "link": "projects/mobilefamilybill.html",
+            "image": "images/project_imgs/tmobilebill_ss.png",
+            "alt": "Bill Splitter Thumbnail"
+        },
+        {
+            "id": "bike-optimization",
+            "title": "Bike Sharing System Optimization",
+            "link": "projects/bikeoptimization.html",
+            "image": "images/project_imgs/bikeopti_ss.png",
+            "alt": "Bike Optimization Thumbnail"
+        },
+        {
+            "id": "human-activity",
+            "title": "Human Activity Recognition",
+            "link": "projects/humanactivity.html",
+            "image": "images/project_imgs/humanactivity.png",
+            "alt": "Human Activity Recognition Thumbnail"
+        },
+        {
+            "id": "smartphone-price",
+            "title": "Smartphone Price Prediction",
+            "link": "projects/smartphonepricer.html",
+            "image": "images/project_imgs/smartphoneprice.png",
+            "alt": "Smartphone Price Prediction Thumbnail"
+        }
+    ],
+    "education": [
+        {
+            "school": "Purdue University, Krannert school of Management, West Lafayette",
+            "school_url": "https://business.purdue.edu/undergraduate/academics/business-analytics-and-information-management.php",
+            "period": "2021 - 2022",
+            "image": "images/edu_interest_imgs/purdue_pic.jpg",
+            "description": "Purdue was my gateway to the world of data science, courtesy of pandemic-induced career soul-searching. My days at AB InBev where I wrestled with Excel spreadsheets and played statistical detective to save the company some dollars, had planted a seed. The pandemic gave me way too much time to think, and I realized I was genuinely obsessed with turning numbers into stories. Purdue's world-class Business Analytics program called to me from across the oceans. Ten months of intense learning later, surrounded by brilliant minds from every corner of the globe, I somehow managed to stand out in this incredible crowd. The cherry on top was landing one of the most coveted Data Scientist spots at BCG. From fixing brewery floors in India to the consulting towers in New York, it's been one wild ride. The takeaway? Never stop learning."
+        },
+        {
+            "school": "BITS Pilani, Pilani campus",
+            "school_url": "https://www.bits-pilani.ac.in/pilani/mechanical-engineering/",
+            "period": "2015 - 2019",
+            "image": "images/edu_interest_imgs/bits.png",
+            "description": "BITS was four years of organized chaos where I juggled Mechanical Engineering, a Finance minor, and an unhealthy obsession with building an ATV. I rose through the ranks of Inspired Karters - BAJA team, to be the leader of 32 brilliant engineers, designing vehicles that could handle anything except my driving. Between managing the team, contributing to cultural and mechanical association events, and showing up to all the parties, I somehow graduated. The universe rewarded this beautiful madness when AB InBev rolled up with one of the coolest jobs at the Budweiser brewery. Thing to always remember - Make sure I enjoy the work I do and the people I do it with."
+        },
+        {
+            "school": "St. Mary's Convent Sr. Secondary School, Ujjain",
+            "school_url": "http://www.stmarysujjain.in/fsma/Default.html",
+            "period": "2001 - 2015",
+            "image": "images/edu_interest_imgs/school_front.jpeg",
+            "description": "Spent 14 years at this gem of a place where I found lifelong friends and amazing mentors who shaped my early years. I was always the child with 'potential' (teacher code for 'tries hard, achieves little') and kept my distance from the academic success my parents were hoping for. Then came the plot twist: I somehow scored the highest in the entire school during 12th grade board exams. That (unexpected) success gave me the boost I needed to tackle India's (in)famous competitive entrance exams and secure my ticket to BITS Pilani. The biggest lesson? Confidence is king!"
+        }
+    ],
+    "work": [
+        {
+            "company": "CVS Health",
+            "company_url": "https://www.cvshealth.com/",
+            "role": "Senior Data Scientist",
+            "period": "Aug 2024 - Present",
+            "image": "images/company_logos/cvs_logo.svg",
+            "tasks": [
+                "Built and deployed a predictive analytics model to identify at-risk customers with 80% accuracy, enabling proactive retention campaigns and operational improvements to prevent customer churn",
+                "Created Generative AI-powered system to automatically analyze pharmacy order delay patterns, reducing time to identify root causes from >1 hour to less than 5 minutes per case and accelerating operational improvements",
+                "Created a machine learning system to predict business interruptions with >70% accuracy using operational patterns, enabling proactive resource planning and reducing operational disruptions by 30%"
+            ]
+        },
+        {
+            "company": "Boston Consulting Group",
+            "company_url": "https://www.bcg.com/x/",
+            "role": "Data Scientist",
+            "period": "Jun 2022 - Aug 2024",
+            "image": "images/company_logos/bcg_logo.png",
+            "tasks": [
+                "Led the design and implementation of an explainability model for demand forecasts (using permutation importance), increasing stakeholder trust and improving supply planning and financial decisions for a multi-billion dollar CPG client",
+                "Developed proprietary modeling tool to measure incremental business impact from strategic initiatives using a Synthetic Control, informing client market expansion decisions",
+                "Built and deployed Gurobi-based network optimization model for national logistics provider, informing infrastructure and workforce strategy with projected $5B in 10-year cost savings",
+                "Managed 5-member analytics team to develop Prophet time-series models predicting credit card spend across 1,500+ US firms, achieving 18% WMAPE and outperforming baseline by 6%",
+                "Designed AnyLogic simulation of mine-to-port operations to identify bottlenecks and optimize port utilization, delivering recommendations that enabled $10M+ supply chain cost reduction for a major mining company"
+            ]
+        },
+        {
+            "company": "AB InBev",
+            "company_url": "https://www.ab-inbev.com/what-we-do",
+            "role": "Assistant Manager",
+            "period": "Jun 2019 - Oct 2020",
+            "image": "images/company_logos/abinbev_logo.png",
+            "tasks": [
+                "Predicted early stage alcohol content using regression, boosting Budweiser production line's service level accuracy by 12%",
+                "Coordinated cross-functional execution of $500K capital expenditure project, serving as primary liaison between internal departments and external suppliers to ensure on-time delivery"
+            ]
+        }
+    ],
+    "internships": [
+        {
+            "company": "Undisclosed Industry Partner (worker safety solutions company)",
+            "company_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "role": "Student Data Scientist Consultant",
+            "period": "Jan 2022 - May 2022",
+            "image": "images/company_logos/undisclosed_logo.webp",
+            "tasks": [
+                "Built a deep learning classification model using PyTorch in Python to identify slips, trips, falls, or other events of workers from 15-second accelerometer data to identify potential workplace hazards with 74% precision"
+            ]
+        },
+        {
+            "company": "RH",
+            "company_url": "https://rh.com/us/en/",
+            "role": "Student Data Scientist Consultant",
+            "period": "Jan 2022 - May 2022",
+            "image": "images/company_logos/rh_logo.svg",
+            "tasks": [
+                "Forecasted shipping volumes per shipping lane between ports using ARIMA and ETS models per month achieving a cross-validated MAPE score of 47%"
+            ]
+        },
+        {
+            "company": "InMobi",
+            "company_url": "https://www.inmobi.com/",
+            "role": "Business Analyst Intern",
+            "period": "Jul 2018 - Dec 2018",
+            "image": "images/company_logos/inmobi_logo.png",
+            "tasks": [
+                "Optimized digital advertising campaigns using demand management techniques, generating $500K in revenue",
+                "Introduced automation in the daily reporting routine with VBA programming in Excel increasing productivity by 25%"
+            ]
+        }
+    ],
+    "interests": [
+        {
+            "title": "Hiking",
+            "image": "images/edu_interest_imgs/hiking_collage.png",
+            "alt": "Hiking collage",
+            "description": "I love hiking, trekking, and exploring the great outdoors. There's something truly special about being in nature and experiencing its beauty firsthand. I make sure every weekend I do something outdoorsy, whether it's a long hike or a short nature walk. I want to visit all the famous hiking trails in the world, and I have a long list of places I want to explore. Some of my favorite nature spots yet include the Angels's landing in Zion National Park, Old man of Storr in Scotland, and the Kheerganga trek in the Himalayas."
+        },
+        {
+            "title": "Quizzing",
+            "image": "images/edu_interest_imgs/quizzing_collage.png",
+            "alt": "Quizzing collage",
+            "description": "I got introduced to quizzing by my roommates at BITS and have enjoyed it since. Participating in quiz leagues and trivia nights is always a fun challenge for me. I enjoy the thrill of competing and the joy of learning new facts. Some of my favorite quiz topics include business, science, and pop culture."
+        },
+        {
+            "title": "Cooking",
+            "image": "images/edu_interest_imgs/cooking_collage.png",
+            "alt": "Cooking collage",
+            "description": "Food has a special place in my heart. I enjoy experimenting with new recipes and exploring different cuisines. Cooking is a creative outlet for me, and I love sharing my culinary creations with friends and family. Some of my favorite dishes to make include the staple dal-chawal, chicken tikka, pasta, and traditional Indian curries."
+        }
+    ],
+    "certifications": [
+        {
+            "title": "Google Data Analytics",
+            "link": "https://drive.google.com/file/d/16RJgcWJ-PuaSE5yKrjdNL8EYb7XRu2-b/view?usp=sharing",
+            "image": "images/edu_interest_imgs/google_logo.png",
+            "alt": "Google Logo",
+            "issued": "June 2021"
+        },
+        {
+            "title": "Statistics with R",
+            "institution": "Duke University",
+            "link": "https://drive.google.com/file/d/1yL-TApfM9fRwI8VXR3CkKPEWeHhWuSJt/view?usp=sharing",
+            "image": "images/edu_interest_imgs/duke_logo.png",
+            "alt": "Duke University Logo",
+            "issued": "April 2020"
+        },
+        {
+            "title": "Business Analytics Specialization",
+            "institution": "Wharton Online",
+            "link": "https://drive.google.com/file/d/1XeRjBB0-z7Use4eEC7sjngPZHs1Pnh6J/view?usp=drive_link",
+            "image": "images/edu_interest_imgs/Wharton_logo.png",
+            "alt": "Wharton Online Logo",
+            "issued": "March 2019"
+        },
+        {
+            "title": "Machine Learning with Andrew Ng",
+            "institution": "Stanford Online",
+            "link": "https://drive.google.com/file/d/15p_hVdrubzois8PL2hvYRTUhV4dqUb0S/view?usp=drive_link",
+            "image": "images/edu_interest_imgs/Stanford_Logo.png",
+            "alt": "Stanford Logo",
+            "issued": "October 2018"
+        }
+    ]
+}

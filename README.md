@@ -26,6 +26,17 @@ To add a new project, you'll need to do two things:
 
 To add a new work experience, you'll need to edit `pages/work.html`. Add a new `work-entry` div and fill in the details of the company, your role, and your responsibilities.
 
+## Running Locally
+
+Since this is a static website, the easiest way to run it locally is using Python's built-in HTTP server (which comes pre-installed on macOS).
+
+1. Open your terminal and navigate to the project directory.
+2. Run the following command:
+   ```bash
+   python3 -m http.server
+   ```
+3. Open your browser and visit `http://localhost:8000` to see your changes live.
+
 ## Using this as a Template
 
 If you want to use this repo as a template for your own website, here are the things you'll want to change:

@@ -63,20 +63,61 @@
     <main>
         <div class="left-panel-container"></div>
         <div class="right-panel">
-            <h2>About me</h2>
-            <p>
-                My wife has known me since we were both 5 years old, and she still has trouble introducing me. So let's
-                see how this goes.<br>
-                I am a fun, friendly and (occasionally) funny person who loves to learn and explore new things.
-                I studied engineering and analytics and enjoy building things. I am passionate about technology
-                and business and have a background in healthcare, consulting, supply chain, retail, and manufacturing.
-            </p>
-            <p>
-                I am fluent in English, Hindi, Python, SQL and R and love talking to both people and machines. Feel
-                free to browse through my work and get in touch if you'd like to connect.
-            </p>
+            <section id="about">
+                <h2>About me</h2>
+                <p>
+                    My wife has known me since we were both 5 years old, and she still has trouble introducing me. So
+                    let's
+                    see how this goes.<br>
+                    I am a fun, friendly and (occasionally) funny person who loves to learn and explore new things.
+                    I studied engineering and analytics and enjoy building things. I am passionate about technology
+                    and business and have a background in healthcare, consulting, supply chain, retail, and
+                    manufacturing.
+                </p>
+                <p>
+                    I am fluent in English, Hindi, Python, SQL and R and love talking to both people and machines. Feel
+                    free to browse through my work and get in touch if you'd like to connect.
+                </p>
+            </section>
+
+            <section id="projects">
+                <div class="section-header">
+                    <h2>Projects</h2>
+                    <a href="projects.html" class="view-all-link">View all projects &rarr;</a>
+                </div>
+                <!-- Projects Container: Limit 3 -->
+                <div id="projects-container" class="project-grid" data-limit="3"></div>
+            </section>
+
+            <section id="education">
+                <div class="section-header">
+                    <h2>Education</h2>
+                    <a href="./pages/education.html" class="view-all-link">View full education &rarr;</a>
+                </div>
+                <!-- Education Container: Limit 1 -->
+                <div id="education-container" data-limit="1"></div>
+            </section>
+
+            <section id="experience">
+                <div class="section-header">
+                    <h2>Experience</h2>
+                    <a href="./pages/work.html" class="view-all-link">View full experience &rarr;</a>
+                </div>
+                <!-- Work Container: Limit 1 -->
+                <div id="work-container" data-limit="1"></div>
+            </section>
+
+            <section id="interests">
+                <div class="section-header">
+                    <h2>Interests</h2>
+                    <a href="./pages/interests.html" class="view-all-link">View all interests &rarr;</a>
+                </div>
+                <!-- Interests Container: Limit 1 -->
+                <div id="interests-container" data-limit="1"></div>
+            </section>
         </div>
     </main>
+    <script src="js/loader.js"></script>
 </body>
 
 </html>

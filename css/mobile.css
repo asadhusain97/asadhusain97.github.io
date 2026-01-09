@@ -78,4 +78,23 @@
     .project-entry a {
         display: block;
     }
+
+    .education-entry,
+    .interest-entry {
+        flex-direction: column;
+        align-items: center;
+        /* Center image */
+        text-align: left;
+        /* Keep text left or center? details usually left */
+    }
+
+    .education-entry img,
+    .interest-entry img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        width: 100%;
+        max-width: 300px;
+        /* Limit size */
+        height: auto;
+    }
 }
