@@ -42,21 +42,21 @@
             "school_url": "https://business.purdue.edu/undergraduate/academics/business-analytics-and-information-management.php",
             "period": "2021 - 2022",
             "image": "images/edu_interest_imgs/purdue_pic.jpg",
-            "description": "Purdue was my gateway to the world of data science, courtesy of pandemic-induced career soul-searching. My days at AB InBev where I wrestled with Excel spreadsheets and played statistical detective to save the company some dollars, had planted a seed. The pandemic gave me way too much time to think, and I realized I was genuinely obsessed with turning numbers into stories. Purdue's world-class Business Analytics program called to me from across the oceans. Ten months of intense learning later, surrounded by brilliant minds from every corner of the globe, I somehow managed to stand out in this incredible crowd. The cherry on top was landing one of the most coveted Data Scientist spots at BCG. From fixing brewery floors in India to the consulting towers in New York, it's been one wild ride. The takeaway? Never stop learning."
+            "description": "My days wrestling with Excel sheets at AB InBev planted a seed, but it took some pandemic-induced soul-searching to realize I was obsessed with turning numbers into stories. Purdue became my gateway to data science, calling me across the ocean for ten months of intense learning among brilliant global peers. The cherry on top was landing a coveted Data Scientist role at BCG. From fixing brewery floors in India to New York consulting towers, it's been a wild ride. The takeaway? Never stop learning."
         },
         {
             "school": "BITS Pilani, Pilani campus",
             "school_url": "https://www.bits-pilani.ac.in/pilani/mechanical-engineering/",
             "period": "2015 - 2019",
             "image": "images/edu_interest_imgs/bits.png",
-            "description": "BITS was four years of organized chaos where I juggled Mechanical Engineering, a Finance minor, and an unhealthy obsession with building an ATV. I rose through the ranks of Inspired Karters - BAJA team, to be the leader of 32 brilliant engineers, designing vehicles that could handle anything except my driving. Between managing the team, contributing to cultural and mechanical association events, and showing up to all the parties, I somehow graduated. The universe rewarded this beautiful madness when AB InBev rolled up with one of the coolest jobs at the Budweiser brewery. Thing to always remember - Make sure I enjoy the work I do and the people I do it with."
+            "description": "BITS was a blur of Mechanical Engineering, a Finance minor, and leading 32 engineers to build ATVs that could handle anything but my driving. Between the cultural events, parties, and the 'organized chaos' of the BAJA team, I somehow graduated into a dream gig at the Budweiser brewery. It taught me the most important rule: always enjoy the work and the people you do it with."
         },
         {
             "school": "St. Mary's Convent Sr. Secondary School, Ujjain",
             "school_url": "http://www.stmarysujjain.in/fsma/Default.html",
             "period": "2001 - 2015",
             "image": "images/edu_interest_imgs/school_front.jpeg",
-            "description": "Spent 14 years at this gem of a place where I found lifelong friends and amazing mentors who shaped my early years. I was always the child with 'potential' (teacher code for 'tries hard, achieves little') and kept my distance from the academic success my parents were hoping for. Then came the plot twist: I somehow scored the highest in the entire school during 12th grade board exams. That (unexpected) success gave me the boost I needed to tackle India's (in)famous competitive entrance exams and secure my ticket to BITS Pilani. The biggest lesson? Confidence is king!"
+            "description": "For 14 years, this place gave me lifelong friends and mentors, even if I was just the kid with 'potential' rather than results. Then came the surprise: I somehow scored the highest in the school during my board exams. That boost was exactly what I needed to navigate India's competitive entrance exams and secure my ticket to BITS Pilani. The takeaway? Confidence is king!"
         }
     ],
     "work": [
