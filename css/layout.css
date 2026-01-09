@@ -60,7 +60,7 @@ main {
     width: 300px;
     max-width: 200px;
     padding-right: 3rem;
-    padding-left: 2rem;
+    padding-left: 0;
     flex-shrink: 0;
     text-align: center;
     display: flex;
@@ -71,6 +71,17 @@ main {
 .right-panel {
     flex: 2;
     max-width: 800px;
+}
+
+/* Sticky left panel only on wider screens */
+@media (min-width: 769px) {
+
+    .left-panel-container,
+    .left-panel {
+        position: sticky;
+        top: 2rem;
+        align-self: flex-start;
+    }
 }
 
 @media (max-width: 768px) {
