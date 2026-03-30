@@ -70,7 +70,7 @@
         {
             "company": "CVS Health",
             "company_url": "https://www.cvshealth.com/",
-            "role": "Senior Data Scientist",
+            "role": "Sr. Data Scientist",
             "period": "Aug 2024 - Present",
             "image": "images/company_logos/cvs_logo.svg",
             "tasks": [
@@ -87,10 +87,10 @@
             "image": "images/company_logos/bcg_logo.png",
             "tasks": [
                 "Led the design and implementation of an explainability model for demand forecasts (using permutation importance), increasing stakeholder trust and improving supply planning and financial decisions for a multi-billion dollar CPG client",
-                "Developed proprietary modeling tool to measure incremental business impact from strategic initiatives using a Synthetic Control, informing client market expansion decisions",
-                "Built and deployed Gurobi-based network optimization model for national logistics provider, informing infrastructure and workforce strategy with projected $5B in 10-year cost savings",
-                "Managed 5-member analytics team to develop Prophet time-series models predicting credit card spend across 1,500+ US firms, achieving 18% WMAPE and outperforming baseline by 6%",
-                "Designed AnyLogic simulation of mine-to-port operations to identify bottlenecks and optimize port utilization, delivering recommendations that enabled $10M+ supply chain cost reduction for a major mining company"
+                "Engineered a Synthetic Control experimentation package to rigorously measure causal lift from $5M market experiments across 100+ DMAs — replaced diff-in-diff methodology, commercialized and licensed to additional BCG clients",
+                "Architected Gurobi-based network optimization model for a national logistics provider, projecting $5B in 10-year savings across operations, infrastructurem and workforce planning",
+                "Led 5-person team building Prophet time-series models forecasting credit card spend across 1,500+ US firms, achieving 18% WMAPE and outperforming baseline by 6 percentage points",
+                "Designed AnyLogic discrete-event simulation of mine-to-port operations of a mining company to identify throughput bottlenecks, delivering $10M+ in supply chain cost reductions"
             ]
         },
         {
