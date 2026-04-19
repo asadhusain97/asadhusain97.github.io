@@ -4,6 +4,7 @@
 }
 
 .social-media {
+    position: relative;
     margin-top: 1rem;
 }
 
@@ -15,10 +16,62 @@
     transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
+.social-media a:last-child {
+    margin-right: 0;
+}
+
 .social-media a:hover {
     color: #61fb75;
     filter: opacity(0.8);
     filter: brightness(0.7);
+}
+
+/* Hand-drawn hint pointing to the résumé PDF icon */
+.resume-hint {
+    position: absolute;
+    top: calc(100% - 6px);
+    right: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    pointer-events: none;
+    color: #3f6b47;
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    line-height: 1;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(6px);
+    animation: resume-hint-fade 0.9s ease 0.5s forwards;
+}
+
+.resume-arrow {
+    width: 56px;
+    height: 38px;
+    margin-right: 0;
+    margin-bottom: 2px;
+    overflow: visible;
+}
+
+.resume-hint-text {
+    letter-spacing: 0.3px;
+    transform: rotate(-3deg) translateX(-6px);
+    transform-origin: 100% 50%;
+}
+
+@keyframes resume-hint-fade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .resume-hint {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
 }
 
 /* Profile photo */
