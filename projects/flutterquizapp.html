@@ -4,7 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asad's Projects</title>
+    <title>Buzz5 Quiz App | Asad Husain</title>
+    <meta name="description" content="Buzz5 — a real-time multiplayer, Jeopardy-style quiz web app built in Flutter, with a community marketplace, buzzer mechanic, and live scoring.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Buzz5 Quiz App | Asad Husain">
+    <meta property="og:description" content="Buzz5 — a real-time multiplayer, Jeopardy-style quiz web app built in Flutter, with a community marketplace, buzzer mechanic, and live scoring.">
+    <meta property="og:url" content="https://asadhusain97.github.io/projects/flutterquizapp.html">
+    <meta property="og:image" content="https://asadhusain97.github.io/images/project_imgs/buzz5_anim.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Buzz5 Quiz App | Asad Husain">
+    <meta name="twitter:description" content="Buzz5 — a real-time multiplayer, Jeopardy-style quiz web app built in Flutter, with a community marketplace, buzzer mechanic, and live scoring.">
+    <meta name="twitter:image" content="https://asadhusain97.github.io/images/project_imgs/buzz5_anim.png">
     <link rel="icon" href="../images/website_icon.png" type="image/png">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/mobile.css">
@@ -27,8 +37,8 @@
             <ul>
                 <li><a href="../index.html">About</a></li>
                 <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../pages/work.html">Experience</a></li>
                 <li><a href="../pages/education.html">Education</a></li>
-                <li><a href="../pages/work.html">Work</a></li>
                 <li><a href="../pages/interests.html">Interests</a></li>
             </ul>
         </nav>
@@ -57,9 +67,9 @@
         <h2>Flutter Based Quiz App</h2>
         <p><i>A web app for creating and playing quizzes</i></p>
         <figure>
-            <img src="../images/project_imgs/buzz5_anim.png" alt="Project 2 Image">
+            <img src="../images/project_imgs/buzz5_anim.png" alt="Buzz5 quiz app game board and gameplay">
         </figure>
-        <p><a href="https://github.com/asadhusain97/buzz5_quiz_app" target="_blank"><b>Link to Github
+        <p><a href="https://github.com/asadhusain97/buzz5" target="_blank"><b>Link to Github
                     Repo</b></a>
             | <a href="https://buzz5quiz.web.app/" target="_blank"><b>Link to
                     App</b></a></p>
@@ -74,31 +84,45 @@
         </p>
         <h3>How It Works</h3>
         <p>
-            <b>Custom Quiz Creation:</b> We create questions in the app and also list in the marketplace for others to
-            use in their quizzes.
+            <b>Custom Quiz Creation:</b> Build question sets right in the app with a drag-and-drop builder, or bulk-import
+            them from a CSV file. Questions can carry images, audio clips, or embedded YouTube videos - not just text.
             <br>
-            <b>Live Game Experience:</b> One person hosts as quizmaster, navigating through the question board while
-            others buzz in to answer. Jeopardy! style gameplay.
+            <b>Community Marketplace:</b> Browse public quizzes other people have created, search and filter by name or
+            creator, and add any set to your own collection to host with your friends.
             <br>
-            <b>Real-time Scoring:</b> Built-in leaderboard tracks everyone's performance throughout the game, with
-            custom scoring because quizmaster is god.
+            <b>Live Game Experience:</b> One person signs in and hosts as quizmaster, creating a game room with a unique
+            code. Others join with the code (or jump in as a guest, no account needed), then race to answer off the
+            board - Jeopardy! style gameplay.
+            <br>
+            <b>Buzzer Mechanic:</b> Players buzz in and the app timestamps every press, so the fastest finger genuinely
+            wins.
+            <br>
+            <b>Real-time Scoring:</b> A live leaderboard tracks everyone's performance throughout the game, with custom
+            scoring because the quizmaster is god. Chain multiple boards into one session and cap it off with a final
+            standings screen and a celebratory confetti finish.
             <br>
             <b>Web-based:</b> Runs in any browser, so no app downloads needed - just share the link and everyone's ready
-            to play. You can use the in-built buzzer that seamlessly syncs with the question board or use your own
-            buzzer system.
+            to play.
         </p>
         <h3>Technical Journey</h3>
-        <p>First time diving deep into Flutter, so this was a crash course in mobile/web app development. Built the
-            entire frontend, handled state management, integrated with firebase as a backend, and figured out
-            real-time game mechanics.
-            The buzzer functionality was particularly fun to implement - had to think about timing, multiple player
-            inputs, and making sure the fastest finger actually wins.</p>
+        <p>First time diving deep into Flutter, so this was a crash course in web app development. I built the entire
+            frontend, handled state management, and set up Firebase as the backend - Auth for secure sign-in (plus guest
+            mode), Firestore and Realtime Database for live game state, Storage for question media, and App Check with
+            reCAPTCHA to keep things safe.
+            The buzzer was particularly fun to get right: every press is timestamp-ordered so the fastest responder is
+            picked fairly across multiple players. On top of the core game loop I built an in-app quiz builder with
+            drag-and-drop question tabs, CSV import, a community marketplace for publishing and downloading sets, and
+            post-game profile stats with score graphs (fl_chart). PostHog analytics rounds it out so I can see how the
+            app actually gets used.</p>
         <h3>Impact and Future Plans</h3>
         <p>The real win isn't the code - it's the quality time with friends. We've had some epic quiz nights thanks to
             this app, and everyone's gotten surprisingly competitive about creating better questions.
-            I'm excited to turn this into a standalone product for quiz enthusiasts everywhere. I have added a proper
-            backend and a marketplace for questions for others to contribute and create a community.</p>
-        <p><b>Technologies Used:</b> Flutter, Dart, Firebase, Web deployment</p>
+            Now that there's a proper backend, a live buzzer, and a community marketplace, I'm excited to turn this into
+            a standalone product for quiz enthusiasts everywhere. Next up: Excel (.xlsx) import alongside CSV, deeper
+            player profiles and analytics, real-time chat during games, more question formats, and eventually native
+            mobile apps.</p>
+        <p><b>Technologies Used:</b> Flutter, Dart, Firebase (Auth, Firestore, Realtime Database, Storage, App Check),
+            fl_chart, PostHog, Web deployment</p>
         <p><i>Personal project, 2025 - ongoing</i></p>
     </main>
 </body>

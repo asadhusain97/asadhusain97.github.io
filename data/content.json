@@ -74,8 +74,9 @@
             "period": "Aug 2024 - Present",
             "image": "images/company_logos/cvs_logo.svg",
             "tasks": [
+                "Built an agentic analytics chatbot (Google ADK, BigQuery) that lets 50+ analysts and non-technical stakeholders self-serve root-cause analysis on patient operational issues, cutting investigation time from ~2 hours to under 15 minutes; currently in testing, slated for production by year-end",
+                "Designed a semantic vector-search system over 3.5M patient escalations (3 years of reasons and resolutions), letting analysts retrieve how similar issues were resolved through natural-language queries, with an automated pipeline to keep the vector index current",
                 "Built and deployed a predictive analytics model to identify at-risk customers with 80% accuracy, enabling proactive retention campaigns and operational improvements to prevent customer churn",
-                "Created Generative AI-powered system to automatically analyze pharmacy order delay patterns, reducing time to identify root causes from >1 hour to less than 5 minutes per case and accelerating operational improvements",
                 "Created a machine learning system to predict business interruptions with >70% accuracy using operational patterns, enabling proactive resource planning and reducing operational disruptions by 30%"
             ]
         },
@@ -88,7 +89,7 @@
             "tasks": [
                 "Led the design and implementation of an explainability model for demand forecasts (using permutation importance), increasing stakeholder trust and improving supply planning and financial decisions for a multi-billion dollar CPG client",
                 "Engineered a Synthetic Control experimentation package to rigorously measure causal lift from $5M market experiments across 100+ DMAs — replaced diff-in-diff methodology, commercialized and licensed to additional BCG clients",
-                "Architected Gurobi-based network optimization model for a national logistics provider, projecting $5B in 10-year savings across operations, infrastructurem and workforce planning",
+                "Architected Gurobi-based network optimization model for a national logistics provider, projecting $5B in 10-year savings across operations, infrastructure, and workforce planning",
                 "Led 5-person team building Prophet time-series models forecasting credit card spend across 1,500+ US firms, achieving 18% WMAPE and outperforming baseline by 6 percentage points",
                 "Designed AnyLogic discrete-event simulation of mine-to-port operations of a mining company to identify throughput bottlenecks, delivering $10M+ in supply chain cost reductions"
             ]
